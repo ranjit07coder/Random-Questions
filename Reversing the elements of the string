@@ -1,0 +1,17 @@
+//In this question we have to change the order of the words in the give strings on the basis of the splits.
+
+class Main {
+    public static void main(String[] args) {
+        String input ="mugambo khush hau";
+        StringBuilder ans=new StringBuilder();
+        String [] arr=input.split(" ");
+        for (int i=arr.length-1;i>=0;i--){
+            ans.append(arr[i]);
+            if(i!=0){
+                ans.append(" "); // 
+            }
+        }
+        
+        System.out.println(ans);
+    }
+}
